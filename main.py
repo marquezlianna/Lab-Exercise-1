@@ -7,6 +7,10 @@ output_str = ""
 
 # check every character
 for i in range(len(input_str)):
-    
+# if *, change to a
+    if input_str[i] == "*":
+        output_str += "a"
+
+
 
 
