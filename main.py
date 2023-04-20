@@ -5,4 +5,8 @@ import pyfiglet
 input_str = input("What is your input string? ")
 output_str = ""
 
+# check every character
+for i in range(len(input_str)):
+    
+
 
