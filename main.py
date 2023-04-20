@@ -4,7 +4,7 @@ import pyfiglet
 # change font color
 class ANSI():
     def color_text(code):
-        return "\33[{code}]m".format(code=code)
+        return "\33[{code}m".format(code=code)
 
 # ask user for input then save it
 input_str = input("What is your input string? ")
@@ -30,10 +30,7 @@ for i in range(len(input_str)):
     else:
         output_str += input_str[i]
 
-# print output
-print(pyfiglet.figlet_format(output_str, font = "bubble"))
-output_str = ANSI.color_text(96) + output_str
-print(output_str)
+
 
 
 
